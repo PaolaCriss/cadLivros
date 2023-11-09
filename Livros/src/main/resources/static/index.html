@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca da Paola</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Biblioteca da Paola</h1>
+        <div id="cadastro" class="dtls">
+            <h2>Cadastro de Livros</h2>
+            <form id="cadastroForm">
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" name="description" required><br>
+                <br>
+                <label for="isbn">Código de barras:</label>
+                <input type="text" id="isbn" name="isbn" required><br>
+                <br>
+                <button type="submit">Cadastrar🙂</button><br>
+                <br>
+                <button type="button" onclick="atualizarLivro()">Atualizar🙃</button><br>
+                <br>
+                <button type="button" onclick="deletarLivro()">Deletar🤨</button>
+            </form>
+        </div>
+        <br>
+        <div id="pesquisa" class="dtls">
+            <h2>Pesquisa de Livro</h2>
+            <form id="pesquisaForm">
+                <label for="searchId">ID do Livro:</label>
+                <input type="text" id="searchId" name="searchId"><br>
+                <br>
+                <button type="button" onclick="pesquisarLivro()">Pesquisar</button>
+            </form>
+            <div id="resultadoPesquisa"></div>
+        </div>
+        <script src="Script.js"></script>
+    </center>
+</body>
+
+</html>
